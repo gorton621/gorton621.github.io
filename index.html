@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.build.css">
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+      window.onload = function(){
+            var tmpTag = 'https:' == document.location.protocol ? false : true;
+            if(tmpTag){
+                var urls=window.location.href;
+                urls = urls.replace("http", "https");
+                window.location=urls;
+            }
+        }
+    </script>
 </head>
 <body>
 
